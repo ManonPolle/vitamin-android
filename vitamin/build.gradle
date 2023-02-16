@@ -6,6 +6,7 @@ plugins {
 }
 
 dependencies {
+    api(project(":badges"))
     api(project(":buttons"))
     api(project(":checkboxes"))
     api(project(":radiobuttons"))
@@ -21,6 +22,7 @@ dependencies {
     api(project(":chips"))
     api(project(":prices"))
     api(project(":dividers"))
+    api(project(":skeleton"))
     api(project(":tags"))
     api(project(":tabs"))
 }

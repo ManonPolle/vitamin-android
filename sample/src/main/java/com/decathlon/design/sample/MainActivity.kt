@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         setupNavigation()
         setupSearch()
-
     }
 
     private fun setupNavigation() {

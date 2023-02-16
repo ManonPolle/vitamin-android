@@ -32,8 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":vitamin"))
-    implementation(project(":skeleton"))
+    api(project(":vitamin"))
 
     implementation(Dependencies.stdlib)
 

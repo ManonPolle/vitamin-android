@@ -368,6 +368,14 @@
         <item name="tabStyle">?attr/vtmnTabStyle</item>
         <!-- endregion -->
         <!-- endregion -->
+
+        <!-- region Vitamin Buttons -->
+        <item name="vtmnBadgeDefaultMediumStyle">@style/Widget.Vitamin.Badge.Default.Medium</item>
+        <item name="vtmnBadgeBrandMediumStyle">@style/Widget.Vitamin.Badge.Brand.Medium</item>
+        <item name="vtmnBadgeAccentMediumStyle">@style/Widget.Vitamin.Badge.Accent.Medium</item>
+        <item name="vtmnBadgeAlertMediumStyle">@style/Widget.Vitamin.Badge.Alert.Medium</item>
+        <item name="vtmnBadgeReversedMediumStyle">@style/Widget.Vitamin.Badge.Reversed.Medium</item>
+        <!-- endregion -->
     </style>
 
     <style name="Theme.Vitamin.Dark" parent="Base.Theme.Vitamin.Foundation.Dark">
@@ -736,6 +744,14 @@
         <!-- region Material Tabs -->
         <item name="tabStyle">?attr/vtmnTabStyle</item>
         <!-- endregion -->
+        <!-- endregion -->
+
+        <!-- region Vitamin Buttons -->
+        <item name="vtmnBadgeDefaultMediumStyle">@style/Widget.Vitamin.Badge.Default.Medium</item>
+        <item name="vtmnBadgeBrandMediumStyle">@style/Widget.Vitamin.Badge.Brand.Medium</item>
+        <item name="vtmnBadgeAccentMediumStyle">@style/Widget.Vitamin.Badge.Accent.Medium</item>
+        <item name="vtmnBadgeAlertMediumStyle">@style/Widget.Vitamin.Badge.Alert.Medium</item>
+        <item name="vtmnBadgeReversedMediumStyle">@style/Widget.Vitamin.Badge.Reversed.Medium</item>
         <!-- endregion -->
     </style>
 

@@ -80,6 +80,9 @@
         <action
             android:id="@+id/action_main_to_assets"
             app:destination="@id/assets" />
+        <action
+            android:id="@+id/action_main_to_badges"
+            app:destination="@id/badges" />
     </fragment>
     <fragment
         android:id="@+id/colors"
@@ -165,6 +168,10 @@
         android:id="@+id/tabs"
         android:name="com.decathlon.design.sample.components.screens.TabsFragment"
         android:label="@string/tabs_screen_title" />
+    <fragment
+        android:id="@+id/badges"
+        android:name="com.decathlon.design.sample.components.screens.BadgesFragment"
+        android:label="@string/badges_screen_title" />
     <fragment
         android:id="@+id/themes"
         android:name="com.decathlon.design.sample.components.screens.ThemesFragment"

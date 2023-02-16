@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.decathlon.vitamin.appbars.VitaminTopBar
+            android:id="@+id/accentTopBar"
+            style="?attr/vtmnTopBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_badges"
+            app:title="VitaminTopBar" />
+
+        <FrameLayout
+            android:id="@+id/frameParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/titles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33" />
+                <!--region Titles-->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/accentTitle"
+                    style="?attr/vtmnTextAppearanceSubtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="Accent"
+                    app:layout_constraintBottom_toBottomOf="@id/accentMedium"
+                    app:layout_constraintEnd_toEndOf="@id/titles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/accentMedium" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/brandTitle"
+                    style="?attr/vtmnTextAppearanceSubtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="Brand"
+                    app:layout_constraintBottom_toBottomOf="@id/brandMedium"
+                    app:layout_constraintEnd_toEndOf="@id/titles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/brandMedium" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/alertTitle"
+                    style="?attr/vtmnTextAppearanceSubtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="Alert"
+                    app:layout_constraintBottom_toBottomOf="@id/alertMedium"
+                    app:layout_constraintEnd_toEndOf="@id/titles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/alertMedium" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/defaultTitle"
+                    style="?attr/vtmnTextAppearanceSubtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="Default"
+                    app:layout_constraintBottom_toBottomOf="@id/defaultMedium"
+                    app:layout_constraintEnd_toEndOf="@id/titles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/defaultMedium" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/reversedTitle"
+                    style="?attr/vtmnTextAppearanceSubtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="Reversed"
+                    app:layout_constraintBottom_toBottomOf="@id/reversedMedium"
+                    app:layout_constraintEnd_toEndOf="@id/titles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/reversedMedium" />
+                <!--endregion-->
+
+                <!--region Accent-->
+                <include
+                    android:id="@+id/accentMedium"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/titles"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/accentNotText"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/accentMedium"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--endregion-->
+
+                <!--region Brand-->
+                <include
+                    android:id="@+id/brandMedium"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/titles"
+                    app:layout_constraintTop_toBottomOf="@id/accentMedium" />
+
+                <include
+                    android:id="@+id/brandNotText"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/brandMedium"
+                    app:layout_constraintTop_toBottomOf="@id/accentMedium" />
+                <!--endregion-->
+
+                <!--region Alert-->
+
+                <include
+                    android:id="@+id/alertMedium"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/titles"
+                    app:layout_constraintTop_toBottomOf="@id/brandMedium" />
+
+                <include
+                    android:id="@+id/alertNotText"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/alertMedium"
+                    app:layout_constraintTop_toBottomOf="@id/brandMedium" />
+                <!--endregion-->
+
+                <!--region Default-->
+                <include
+                    android:id="@+id/defaultMedium"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/titles"
+                    app:layout_constraintTop_toBottomOf="@id/alertMedium" />
+
+                <include
+                    android:id="@+id/defaultNotText"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/defaultMedium"
+                    app:layout_constraintTop_toBottomOf="@id/alertMedium" />
+                <!--endregion-->
+
+                <!--region Reversed-->
+                <include
+                    android:id="@+id/reversedMedium"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/titles"
+                    app:layout_constraintTop_toBottomOf="@id/defaultMedium" />
+
+                <include
+                    android:id="@+id/reversedNotText"
+                    layout="@layout/badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/reversedMedium"
+                    app:layout_constraintTop_toBottomOf="@id/defaultMedium" />
+                <!--endregion-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

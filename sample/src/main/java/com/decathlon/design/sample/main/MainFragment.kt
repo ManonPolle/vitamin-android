@@ -26,7 +26,9 @@ class MainFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View {
         binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
@@ -47,9 +49,19 @@ class MainFragment : Fragment() {
                         4
                     }
                 layoutManager = GridLayoutManager(context, spanCount)
-                addItemDecoration(VitaminMiddleDividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-                addItemDecoration(VitaminFullBleedDividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
-                adapter = MainAdapter(ComponentProvider.getAll()) {
+                addItemDecoration(
+                    VitaminMiddleDividerItemDecoration(
+                        context,
+                        DividerItemDecoration.VERTICAL
+                    )
+                )
+                addItemDecoration(
+                    VitaminFullBleedDividerItemDecoration(
+                        context,
+                        DividerItemDecoration.HORIZONTAL
+                    )
+                )
+                adapter = MainAdapter(ComponentProvider.getAll().sortedBy { it.nameRes }) {
                     findNavController().navigate(it)
                 }
             }

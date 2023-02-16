@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/no_text_notification"
+        android:icon="@drawable/ic_vtmn_notification_line"
+        android:title="Notification"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/small_notification"
+        android:icon="@drawable/ic_vtmn_notification_line"
+        android:title="Notification"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/medium_notification"
+        android:icon="@drawable/ic_vtmn_notification_line"
+        android:title="Notification"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/large_notification"
+        android:icon="@drawable/ic_vtmn_notification_line"
+        android:title="Notification"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+</menu>
