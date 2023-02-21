@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Vitamin.Badge.Drawable" parent="@style/Widget.MaterialComponents.Badge">
+        <item name="badgeRadius">8dp</item>
+        <item name="badgeGravity">TOP_END</item>
+    </style>
+
+    <style name="Widget.Vitamin.Badge.Drawable.Accent" parent="@style/Widget.Vitamin.Badge.Drawable">
+        <item name="backgroundColor">@color/vtmn_badges_accent_background</item>
+        <item name="android:textColor">@color/vtmn_badges_accent_text_color</item>
+        <item name="badgeTextColor">@color/vtmn_badges_accent_text_color</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Accent.Small" parent="@style/Widget.Vitamin.Badge.Drawable.Accent">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Accent.Medium" parent="@style/Widget.Vitamin.Badge.Drawable.Accent">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
+        <item name="badgeWithTextRadius">8dp</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Accent.Large" parent="@style/Widget.Vitamin.Badge.Drawable.Accent">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Alert" parent="@style/Widget.Vitamin.Badge.Drawable">
+        <item name="backgroundColor">@color/vtmn_badges_alert_background</item>
+        <item name="android:textColor">@color/vtmn_badges_alert_text_color</item>
+        <item name="badgeTextColor">@color/vtmn_badges_alert_text_color</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Alert.Small" parent="@style/Widget.Vitamin.Badge.Drawable.Alert">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>-->
+<!--        <item name="android:textSize">8dp</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Alert.Medium" parent="@style/Widget.Vitamin.Badge.Drawable.Alert">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
+        <item name="badgeWithTextRadius">8dp</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Alert.Large" parent="@style/Widget.Vitamin.Badge.Drawable.Alert">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Brand" parent="@style/Widget.Vitamin.Badge.Drawable">
+        <item name="backgroundColor">@color/vtmn_badges_brand_background</item>
+        <item name="android:textColor">@color/vtmn_badges_brand_text_color</item>
+        <item name="badgeTextColor">@color/vtmn_badges_brand_text_color</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Brand.Small" parent="@style/Widget.Vitamin.Badge.Drawable.Brand">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>-->
+<!--        <item name="android:textSize">8dp</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Brand.Medium" parent="@style/Widget.Vitamin.Badge.Drawable.Brand">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
+        <item name="badgeWithTextRadius">8dp</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Brand.Large" parent="@style/Widget.Vitamin.Badge.Drawable.Brand">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Default" parent="@style/Widget.Vitamin.Badge.Drawable">
+        <item name="backgroundColor">@color/vtmn_badges_default_background</item>
+        <item name="android:textColor">@color/vtmn_badges_default_text_color</item>
+        <item name="badgeTextColor">@color/vtmn_badges_default_text_color</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Default.Small" parent="@style/Widget.Vitamin.Badge.Drawable.Default">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>-->
+<!--        <item name="android:textSize">8dp</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Default.Medium" parent="@style/Widget.Vitamin.Badge.Drawable.Default">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
+        <item name="badgeWithTextRadius">8dp</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Default.Large" parent="@style/Widget.Vitamin.Badge.Drawable.Default">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Reversed" parent="@style/Widget.Vitamin.Badge.Drawable">
+        <item name="backgroundColor">@color/vtmn_badges_reversed_background</item>
+        <item name="android:textColor">@color/vtmn_badges_reversed_text_color</item>
+        <item name="badgeTextColor">@color/vtmn_badges_reversed_text_color</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Reversed.Small" parent="@style/Widget.Vitamin.Badge.Drawable.Reversed">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>-->
+<!--        <item name="android:textSize">8dp</item>-->
+<!--    </style>-->
+
+    <style name="Widget.Vitamin.Badge.Drawable.Reversed.Medium" parent="@style/Widget.Vitamin.Badge.Drawable.Reversed">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
+        <item name="badgeWithTextRadius">8dp</item>
+    </style>
+
+<!--    <style name="Widget.Vitamin.Badge.Drawable.Reversed.Large" parent="@style/Widget.Vitamin.Badge.Drawable.Reversed">-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>-->
+<!--    </style>-->
+</resources>

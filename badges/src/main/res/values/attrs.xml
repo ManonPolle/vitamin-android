@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="vtmnBadgeDefaultSmallStyle" format="reference"/>
-    <attr name="vtmnBadgeDefaultMediumStyle" format="reference"/>
-    <attr name="vtmnBadgeDefaultLargeStyle" format="reference"/>
+<!--    <attr name="vtmnBadgeDefaultSmallStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeDefaultMediumStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeDefaultLargeStyle" format="reference"/>-->
 
-    <attr name="vtmnBadgeAccentSmallStyle" format="reference"/>
-    <attr name="vtmnBadgeAccentMediumStyle" format="reference"/>
-    <attr name="vtmnBadgeAccentLargeStyle" format="reference"/>
+<!--    <attr name="vtmnBadgeAccentSmallStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeAccentMediumStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeAccentLargeStyle" format="reference"/>-->
 
     <attr name="vtmnBadgeBrandSmallStyle" format="reference"/>
     <attr name="vtmnBadgeBrandMediumStyle" format="reference"/>
     <attr name="vtmnBadgeBrandLargeStyle" format="reference"/>
 
-    <attr name="vtmnBadgeReversedSmallStyle" format="reference"/>
-    <attr name="vtmnBadgeReversedMediumStyle" format="reference"/>
-    <attr name="vtmnBadgeReversedLargeStyle" format="reference"/>
+<!--    <attr name="vtmnBadgeReversedSmallStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeReversedMediumStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeReversedLargeStyle" format="reference"/>-->
 
-    <attr name="vtmnBadgeAlertSmallStyle" format="reference"/>
-    <attr name="vtmnBadgeAlertMediumStyle" format="reference"/>
-    <attr name="vtmnBadgeAlertLargeStyle" format="reference"/>
+<!--    <attr name="vtmnBadgeAlertSmallStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeAlertMediumStyle" format="reference"/>-->
+<!--    <attr name="vtmnBadgeAlertLargeStyle" format="reference"/>-->
 </resources>

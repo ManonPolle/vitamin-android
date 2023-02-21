@@ -1,115 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Widget.Vitamin.Badge.Standalone" parent="@style/Widget.MaterialComponents.Badge">
+    <style name="ShapeAppearance.Button.RoundedCorners" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.Vitamin.Badge.Standalone" parent="@style/ShapeAppearance.Button.RoundedCorners">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minWidth">8dp</item>
         <item name="android:minHeight">8dp</item>
-        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="Widget.Vitamin.Badge" parent="@style/Widget.MaterialComponents.Badge">
-        <item name="badgeRadius">8dp</item>
-        <item name="badgeGravity">TOP_END</item>
+    <style name="Widget.Vitamin.Badge.Standalone.Brand" parent="@style/Widget.Vitamin.Badge.Standalone">
+        <item name="background">?attr/vtmnBackgroundColorBrandPrimary</item>
+        <item name="android:textColor">@color/vtmn_badges_brand_text_color</item>>
     </style>
 
-    <style name="Widget.Vitamin.Badge.Accent" parent="@style/Widget.Vitamin.Badge">
-        <item name="backgroundColor">@color/vtmn_badges_accent_background</item>
-        <item name="android:textColor">@color/vtmn_badges_accent_text_color</item>
-        <item name="badgeTextColor">@color/vtmn_badges_accent_text_color</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Accent.Small" parent="@style/Widget.Vitamin.Badge.Accent">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Accent.Medium" parent="@style/Widget.Vitamin.Badge.Accent">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="badgeWithTextRadius">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Accent.Large" parent="@style/Widget.Vitamin.Badge.Accent">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Headline5</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Alert" parent="@style/Widget.Vitamin.Badge">
-        <item name="backgroundColor">@color/vtmn_badges_alert_background</item>
-        <item name="android:textColor">@color/vtmn_badges_alert_text_color</item>
-        <item name="badgeTextColor">@color/vtmn_badges_alert_text_color</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Alert.Small" parent="@style/Widget.Vitamin.Badge.Alert">
+    <style name="Widget.Vitamin.Badge.Standalone.Brand.Small" parent="@style/Widget.Vitamin.Badge.Standalone.Brand">
         <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
         <item name="android:textSize">8dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
     </style>
 
-    <style name="Widget.Vitamin.Badge.Alert.Medium" parent="@style/Widget.Vitamin.Badge.Alert">
+    <style name="Widget.Vitamin.Badge.Standalone.Brand.Medium" parent="@style/Widget.Vitamin.Badge.Standalone.Brand">
         <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="badgeWithTextRadius">8dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
     </style>
 
-    <style name="Widget.Vitamin.Badge.Alert.Large" parent="@style/Widget.Vitamin.Badge.Alert">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Bold.Text3</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Brand" parent="@style/Widget.Vitamin.Badge">
-        <item name="backgroundColor">@color/vtmn_badges_brand_background</item>
-        <item name="android:textColor">@color/vtmn_badges_brand_text_color</item>
-        <item name="badgeTextColor">@color/vtmn_badges_brand_text_color</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Brand.Small" parent="@style/Widget.Vitamin.Badge.Brand">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="android:textSize">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Brand.Medium" parent="@style/Widget.Vitamin.Badge.Brand">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="badgeWithTextRadius">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Brand.Large" parent="@style/Widget.Vitamin.Badge.Brand">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Bold.Text3</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Default" parent="@style/Widget.Vitamin.Badge">
-        <item name="backgroundColor">@color/vtmn_badges_default_background</item>
-        <item name="android:textColor">@color/vtmn_badges_default_text_color</item>
-        <item name="badgeTextColor">@color/vtmn_badges_default_text_color</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Default.Small" parent="@style/Widget.Vitamin.Badge.Default">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="android:textSize">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Default.Medium" parent="@style/Widget.Vitamin.Badge.Default">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="badgeWithTextRadius">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Default.Large" parent="@style/Widget.Vitamin.Badge.Default">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Bold.Text3</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Reversed" parent="@style/Widget.Vitamin.Badge">
-        <item name="backgroundColor">@color/vtmn_badges_reversed_background</item>
-        <item name="android:textColor">@color/vtmn_badges_reversed_text_color</item>
-        <item name="badgeTextColor">@color/vtmn_badges_reversed_text_color</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Reversed.Small" parent="@style/Widget.Vitamin.Badge.Reversed">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="android:textSize">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Reversed.Medium" parent="@style/Widget.Vitamin.Badge.Reversed">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Caption</item>
-        <item name="badgeWithTextRadius">8dp</item>
-    </style>
-
-    <style name="Widget.Vitamin.Badge.Reversed.Large" parent="@style/Widget.Vitamin.Badge.Reversed">
-        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Bold.Text3</item>
+    <style name="Widget.Vitamin.Badge.Standalone.Brand.Large" parent="@style/Widget.Vitamin.Badge.Standalone.Brand">
+        <item name="android:textAppearance">@style/TextAppearance.Vitamin.Body.Regular.Text3</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
     </style>
 </resources>
